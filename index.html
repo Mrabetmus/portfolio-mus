@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil MUSTAPHA – Ingénieur Informatique</title>
+  <link rel="stylesheet" href="style.css.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>MUS<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" data-label="01">Présentation</a></li>
+      <li><a href="#skills" data-label="02">Compétences</a></li>
+      <li><a href="#projects" data-label="03">Projets</a></li>
+      <li><a href="#education" data-label="04">Formation</a></li>
+      <li><a href="#contact" data-label="05">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">Présentation</a></li>
+      <li><a href="#skills" class="mobile-link">Compétences</a></li>
+      <li><a href="#projects" class="mobile-link">Projets</a></li>
+      <li><a href="#education" class="mobile-link">Formation</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal-up" style="--delay:0s">
+        <span class="dot"></span> Disponible pour stage / alternance
+      </div>
+      <h1 class="hero-title reveal-up" style="--delay:0.1s">
+        <span class="line">Computer</span>
+        <span class="line accent-line">Engineer</span>
+        <span class="line thin-line">& Freelance </span>
+      </h1>
+      <p class="hero-desc reveal-up" style="--delay:0.2s">
+        Étudiant en 3e année de cycle ingénieur en informatique.<br/>
+        Je transforme des idées en solutions concrètes, modernes et efficaces.
+      </p>
+      <div class="hero-ctas reveal-up" style="--delay:0.3s">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal-right" style="--delay:0.2s">
+      <div class="photo-frame">
+        <div class="photo-placeholder">
+          <div class="photo-icon"></div>
+          <img src="images/mus_face.jpg" alt="Photo de profil" class="photo-img"/>
+          
+        </div>
+        <div class="photo-badge">
+          <span>3e Année</span>
+        </div>
+        <div class="photo-ring"></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">Présentation</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-up">
+          <p class="about-lead">
+            Passionné par le développement logiciel, les systèmes intelligents et la résolution de problèmes complexes.
+          </p>
+          <p class="about-body">
+            Je travaille activement sur des projets en programmation, intelligence artificielle, réseaux et développement web. Je suis motivé par la création de solutions pratiques et j'aime transformer des idées en projets concrets.
+          </p>
+          <div class="about-objective">
+            <div class="obj-icon">🎯</div>
+            <div>
+              <h3>Objectif professionnel</h3>
+              <p>Développer mes compétences en ingénierie logicielle et data science, contribuer à des projets innovants (web, IA, systèmes distribués), et acquérir une expérience professionnelle solide en développement full-stack et analyse de données.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats reveal-right">
+          <div class="stat-card">
+            <span class="stat-num" data-count="6">0</span>
+            <span class="stat-label">Projets réalisés</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">Langages maîtrisés</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Années de formation</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">Domaines de spécialité</span>
+          </div>
+        </div>
+      </div>
+      <div class="orientations reveal-up">
+        <h3>Profil orienté</h3>
+        <div class="orient-tags">
+          <span class="tag">⚙️ Développement logiciel</span>
+          <span class="tag">🌐 Full-stack web</span>
+          <span class="tag">🤖 Data / IA débutant</span>
+          <span class="tag">🔣 Shopify manager</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Compétences techniques</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal-up" style="--delay:0s">
+          <div class="cat-header">
+            <span class="cat-icon">💻</span>
+            <h3>Programmation</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="skill-name">Python</span><span class="skill-detail">Analyse, automatisation, données</span></li>
+            <li><span class="skill-name">Java</span><span class="skill-detail">POO, structures de données</span></li>
+            <li><span class="skill-name">JavaScript</span><span class="skill-detail">Développement web</span></li>
+            <li><span class="skill-name">Algorithmique</span><span class="skill-detail">Résolution de problèmes</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.1s">
+          <div class="cat-header">
+            <span class="cat-icon">🌐</span>
+            <h3>Développement Web</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="skill-name">Node.js / Express</span><span class="skill-detail">Backend</span></li>
+            <li><span class="skill-name">HTML / CSS / JS</span><span class="skill-detail">Frontend</span></li>
+            <li><span class="skill-name">API REST</span><span class="skill-detail">Conception & intégration</span></li>
+            <li><span class="skill-name">MySQL</span><span class="skill-detail">Bases de données</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.2s">
+          <div class="cat-header">
+            <span class="cat-icon">🧠</span>
+            <h3>Informatique théorique</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="skill-name">Théorie des graphes</span><span class="skill-detail">Connexité, arbres, couplage</span></li>
+            <li><span class="skill-name">Automates</span><span class="skill-detail">Langages formels</span></li>
+            <li><span class="skill-name">Réseaux informatiques</span><span class="skill-detail">Couche physique & liaison</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.3s">
+          <div class="cat-header">
+            <span class="cat-icon">🤖</span>
+            <h3>IA / Vision par ordinateur</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="skill-name">OpenCV</span><span class="skill-detail">Traitement d'image</span></li>
+            <li><span class="skill-name">MediaPipe</span><span class="skill-detail">Détection de mains</span></li>
+            <li><span class="skill-name">Python</span><span class="skill-detail">Vision & traitement</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.4s">
+          <div class="cat-header">
+            <span class="cat-icon">🔐</span>
+            <h3>Sécurité & Cryptographie</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="skill-name">Cryptographie</span><span class="skill-detail">Notions avancées</span></li>
+            <li><span class="skill-name">Sécurité systèmes</span><span class="skill-detail">Principes fondamentaux</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.5s">
+          <div class="cat-header">
+            <span class="cat-icon">📊</span>
+            <h3>Autres compétences</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="skill-name">Analyse logique</span><span class="skill-detail">Mathématique appliquée</span></li>
+            <li><span class="skill-name">Trading XAUUSD</span><span class="skill-detail">Analyse technique</span></li>
+            <li><span class="skill-name">VS Code / Linux</span><span class="skill-detail">Environnements de dev</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Langues -->
+      <div class="languages reveal-up">
+        <h3>📌 Langues</h3>
+        <div class="lang-grid">
+          <div class="lang-item">
+            <div class="lang-flag">🇫🇷</div>
+            <div>
+              <span class="lang-name">Français</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:95%"></div></div>
+              <span class="lang-level">Courant</span>
+            </div>
+          </div>
+          <div class="lang-item">
+            <div class="lang-flag">🇬🇧</div>
+            <div>
+              <span class="lang-name">Anglais</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:65%"></div></div>
+              <span class="lang-level">Technique – Lecture & Compréhension</span>
+            </div>
+          </div>
+        </div>
+          <div class="lang-item">
+            <div class="lang-flag">AR</div>
+            <div>
+              <span class="lang-name">Arabe</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:100%"></div></div>
+              <span class="lang-level">Courant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Projets réalisés</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up" style="--delay:0s">
+          <div class="proj-photo">
+            <div class="proj-photo-placeholder">
+              <a href="file:///C:/Users/ThinkPad/AppData/Local/Temp/abd2063d-332a-4b4f-ba4b-0360e83a6323_Projet%20MSHB.zip.323/Projet%20MSHB/MSHB%20front-end/MonProjet.html/>">  
+              <img src="images/MSHB_logo.png" alt="Projet gestion stock" />
+             </a>
+            </div>
+            <div class="proj-overlay">
+              <span class="proj-tech">Node.js</span>
+              <span class="proj-tech">MySQL</span>
+            </div>
+          </div>
+          <div class="proj-body">
+            <h3>Gestion de stock</h3>
+            <p>Application complète de gestion de stock avec Node.js et MySQL. Interface de suivi des produits, mouvements et inventaire.</p>
+          </div>
+        </div>
+ <div class="project-card reveal-up" style="--delay:0.1s">
+          <div class="proj-photo">
+            <div class="proj-photo-placeholder">
+
+             <a href="https://www.google.com/search?rlz=1C1VDKB_frDZ1203DZ1203&sca_esv=a02f3e9b87f4a5a7&sxsrf=ANbL-n5J1hEOACVq_BgioXS9rp-hQ_R07w:1774715800396&udm=2&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpnHC5OJXXTJvmMu2n9YYx-G_pfw24wg8jEi34E91xBhp9HMsdiPSn3Aed4tqflvNqWh1Pe6Ll-yYN3087nQ7Px3o2VWQHN48zvaLNq_aTgKu2POny_-RjZRpGJTk6G9lQe2laFhA52-fFYIehevOFnfP5xBgIZ9-GhfxcCZLkd9-eMxnv-8PUDxbQaevG-IsCoVjD2og&q=istanbul&sa=X&sqi=2&ved=2ahUKEwidnPDGg8OTAxUR0QIHHQbaDNkQtKgLegQIFhAB&biw=1280&bih=551&dpr=1.5#sv=CAMSVhoyKhBlLVNoaldZbHdzWGVTY3NNMg5TaGpXWWx3c1hlU2NzTToOMTktWlhiM1cxQm9tVE0gBCocCgZtb3NhaWMSEGUtU2hqV1lsd3NYZVNjc00YADABGAcg9qOT5QVKCBABGAEgASgB/>">  
+              <img src="images/cam_mus.png" alt="Projet gestion stock" />
+             </a>
+
+            </div>
+            <div class="proj-overlay">
+              <span class="proj-tech">Node.js</span>
+              <span class="proj-tech">Express</span>
+            </div>
+          </div>
+
+          <div class="proj-body">
+            <h3>SnapClick</h3>
+            <p>Système de gestion d'images pour les photographes.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.2s">
+          <div class="proj-photo">
+            <div class="proj-photo-placeholder">
+             <a href="https://www.google.com/search?rlz=1C1VDKB_frDZ1203DZ1203&sca_esv=a02f3e9b87f4a5a7&sxsrf=ANbL-n5J1hEOACVq_BgioXS9rp-hQ_R07w:1774715800396&udm=2&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpnHC5OJXXTJvmMu2n9YYx-G_pfw24wg8jEi34E91xBhp9HMsdiPSn3Aed4tqflvNqWh1Pe6Ll-yYN3087nQ7Px3o2VWQHN48zvaLNq_aTgKu2POny_-RjZRpGJTk6G9lQe2laFhA52-fFYIehevOFnfP5xBgIZ9-GhfxcCZLkd9-eMxnv-8PUDxbQaevG-IsCoVjD2og&q=istanbul&sa=X&sqi=2&ved=2ahUKEwidnPDGg8OTAxUR0QIHHQbaDNkQtKgLegQIFhAB&biw=1280&bih=551&dpr=1.5#sv=CAMSVhoyKhBlLVNoaldZbHdzWGVTY3NNMg5TaGpXWWx3c1hlU2NzTToOMTktWlhiM1cxQm9tVE0gBCocCgZtb3NhaWMSEGUtU2hqV1lsd3NYZVNjc00YADABGAcg9qOT5QVKCBABGAEgASgB/>">  
+              <img src="images/gestion d'étudiants.png" alt="Projet gestion stock" />
+             </a>
+            </div>
+            <div class="proj-overlay">
+              <span class="proj-tech">Python</span>
+              <span class="proj-tech">Automation</span>
+            </div>
+          </div>
+          <div class="proj-body">
+        <h3>Gestion D'étudiants</h3>
+            <p>Système de Gestion d9Étudiants
+Application Web Django Complète
+Application web complète de gestion académique
+Développée avec Django 5.2.8
+Interface moderne, responsive
+Fonctionnalités avancées de gestion des étudiants.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.3s">
+          <div class="proj-photo">
+            <div class="proj-photo-placeholder">
+             <a href="https://www.google.com/search?rlz=1C1VDKB_frDZ1203DZ1203&sca_esv=a02f3e9b87f4a5a7&sxsrf=ANbL-n5J1hEOACVq_BgioXS9rp-hQ_R07w:1774715800396&udm=2&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpnHC5OJXXTJvmMu2n9YYx-G_pfw24wg8jEi34E91xBhp9HMsdiPSn3Aed4tqflvNqWh1Pe6Ll-yYN3087nQ7Px3o2VWQHN48zvaLNq_aTgKu2POny_-RjZRpGJTk6G9lQe2laFhA52-fFYIehevOFnfP5xBgIZ9-GhfxcCZLkd9-eMxnv-8PUDxbQaevG-IsCoVjD2og&q=istanbul&sa=X&sqi=2&ved=2ahUKEwidnPDGg8OTAxUR0QIHHQbaDNkQtKgLegQIFhAB&biw=1280&bih=551&dpr=1.5#sv=CAMSVhoyKhBlLVNoaldZbHdzWGVTY3NNMg5TaGpXWWx3c1hlU2NzTToOMTktWlhiM1cxQm9tVE0gBCocCgZtb3NhaWMSEGUtU2hqV1lsd3NYZVNjc00YADABGAcg9qOT5QVKCBABGAEgASgB/>">  
+              <img src="images/cine_mus.png" alt="Projet gestion stock" />
+             </a>
+            </div>
+            <div class="proj-overlay">
+              <span class="proj-tech">Algorithmique</span>
+            </div>
+          </div>
+          <div class="proj-body">
+            <h3>Gestion Cinemus</h3>
+            <p>Système de Gestion de cinemus.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.4s">
+          <div class="proj-photo">
+            <div class="proj-photo-placeholder">
+              <img src="images/msa.jpeg" alt="Projet gestion stock" />
+            </div>
+            <div class="proj-overlay">
+              <span class="proj-tech">OpenCV</span>
+              <span class="proj-tech">MediaPipe</span>
+            </div>
+          </div>
+          <div class="proj-body">
+            <h3>MSA STORE</h3>
+            <p>Mini-projets de vente en ligne.</p>
+          </div>
+        </div>
+
+        <div class="project-card project-card--portfolio reveal-up" style="--delay:0.5s">
+          <div class="proj-photo">
+            <div class="proj-photo-placeholder banner-placeholder">
+             <a href="images/cv.pdf">
+              <img src="images/photo_2026-02-06_20-31-40.jpg" alt="Projet gestion stock" />
+              </a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <h3>Portfolio personnel</h3>
+            <p>Mon portfolio professionnel, présentant mes projets et compétences.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Formation</h2>
+      </div>
+      <div class="edu-card reveal-up">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-content">
+          <h3>Cycle Ingénieur en Informatique</h3>
+          <span class="edu-year">3e Année en cours</span>
+          <div class="edu-modules">
+            <h4>Modules étudiés :</h4>
+            <div class="module-tags">
+              <span>Réseaux informatiques</span>
+              <span>Théorie des graphes</span>
+              <span>Langages formels</span>
+              <span>Programmation avancée</span>
+              <span>Sécurité informatique</span>
+              <span>Automates</span>
+              <span>Algorithmique</span>
+              <span>Base de données</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-intro reveal-up">
+          <p>Je suis ouvert aux opportunités de stage, alternance ou collaboration sur des projets passionnants. N'hésitez pas à me contacter !</p>
+        </div>
+        <div class="contact-links reveal-up">
+          <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWrRnXvgbdhkZzmmGMFVtRRNRqSdDLfMdFscpWQHFpTKStCGrQVKqwDLDSZHbKzXftrZDKVXB" class="contact-card">
+            <span class="cc-icon">✉️</span>
+            <div>
+              <span class="cc-label">Email</span>
+              <span class="cc-value">mrabetmus925@gmail.com</span>
+            </div>
+            <span class="cc-arrow">→</span>
+          </a>
+          <a href="https://github.com/Mrabetmus" class="contact-card">
+            <span class="cc-icon">🐙</span>
+            <div>
+              <span class="cc-label">GitHub</span>
+              <span class="cc-value">github.com/Mrabetmus</span>
+            </div>
+            <span class="cc-arrow">→</span>
+          </a>
+          <a href="https://linkedin.com/in/mrabetmus" class="contact-card">
+            <span class="cc-icon">💼</span>
+            <div>
+              <span class="cc-label">LinkedIn</span>
+              <span class="cc-value">linkedin.com/in/mrabetmus</span>
+            </div>
+            <span class="cc-arrow">→</span>
+          </a>
+          <a href="https://mrabetmus.github.io" class="contact-card">
+            <span class="cc-icon">🌐</span>
+            <div>
+              <span class="cc-label">Portfolio</span>
+              <span class="cc-value">mrabetmus.github.io</span>
+            </div>
+            <span class="cc-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo"><span class="logo-bracket">&lt;</span>MUS<span class="logo-bracket">/&gt;</span></span>
+        <p>Ingénieur Informatique · Développement & IA</p>
+        <span class="footer-copy">© 2026 · Tous droits réservés</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js.js"></script>
+</body>
+</html>
